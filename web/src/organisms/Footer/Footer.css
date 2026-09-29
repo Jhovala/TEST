@@ -1,0 +1,20 @@
+.site-footer {
+  padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-muted, #9aa7b3);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--color-accent, #22d3ee);
+  text-decoration: none;
+}
+
+.site-footer__meta {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}

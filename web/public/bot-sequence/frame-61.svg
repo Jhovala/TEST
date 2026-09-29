@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2440"/>
+      <stop offset="1" stop-color="#131a30"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="394.55555555555554" cy="420" rx="330" ry="330" fill="url(#glow)"/>
+  <!-- antena -->
+  <line x1="394.55555555555554" y1="152.5" x2="394.55555555555554" y2="97.5" stroke="#a78bfa" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="394.55555555555554" cy="87.5" r="14" fill="#a78bfa"/>
+  <!-- cuerpo/cabeza -->
+  <rect x="164.55555555555554" y="172.5" width="460" height="420" rx="120" fill="url(#body)" stroke="#2c3a63" stroke-width="6"/>
+  <!-- visor -->
+  <rect x="209.55555555555554" y="257.5" width="370" height="160" rx="80" fill="#0e1428" stroke="#22d3ee" stroke-width="3" opacity="0.95"/>
+  
+    <g>
+      <ellipse cx="304.55555555555554" cy="332.5" rx="58" ry="62" fill="#0b1020" stroke="#22d3ee" stroke-width="4"/>
+      <circle cx="294.44444444444446" cy="338" r="22" fill="#22d3ee"/>
+      <circle cx="287.44444444444446" cy="330" r="7" fill="#eafcff" opacity="0.9"/>
+    </g>
+  
+    <g>
+      <ellipse cx="484.55555555555554" cy="332.5" rx="58" ry="62" fill="#0b1020" stroke="#22d3ee" stroke-width="4"/>
+      <circle cx="474.44444444444446" cy="338" r="22" fill="#22d3ee"/>
+      <circle cx="467.44444444444446" cy="330" r="7" fill="#eafcff" opacity="0.9"/>
+    </g>
+  <!-- boca -->
+  <path d="M 334.55555555555554 472.5 Q 394.55555555555554 502.5 454.55555555555554 472.5" stroke="#22d3ee" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

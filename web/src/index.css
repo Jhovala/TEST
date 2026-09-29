@@ -1,0 +1,87 @@
+:root {
+  --color-bg: #0b1020;
+  --color-surface: #131a30;
+  --color-text: #e6edf3;
+  --color-muted: #9aa7b3;
+  --color-accent: #22d3ee;
+  --color-accent-2: #a78bfa;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(34, 211, 238, 0.08), transparent),
+    radial-gradient(900px 500px at 10% 110%, rgba(167, 139, 250, 0.08), transparent),
+    var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem clamp(1.5rem, 5vw, 3rem);
+}
+
+.section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(34, 211, 238, 0.4);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--color-accent);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1rem;
+}
+
+.card p {
+  color: var(--color-muted);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.steps {
+  color: var(--color-muted);
+  line-height: 1.8;
+  padding-left: 1.25rem;
+}
+
+.steps code {
+  background: var(--color-surface);
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.85em;
+  color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .btn:hover {
+    transform: none;
+  }
+}
